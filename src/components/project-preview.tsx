@@ -9,8 +9,8 @@ import {
 } from "@/components/ui/card";
 import React from "react";
 import Image from "next/image";
-import { Badge } from "@/components/ui/badge";
 import { AnimatedText } from "./typography/animated-text";
+import { Badge } from "@/components/badge";
 
 export const ProjectPreview = ({
   header,
@@ -18,12 +18,14 @@ export const ProjectPreview = ({
   description,
   content,
   link,
+  tags,
 }: {
   header: string;
   icon: string | React.JSX.Element;
   description: string;
   content?: string;
   link: string;
+  tags: Badge[];
 }) => {
   return (
     <Card
@@ -34,10 +36,10 @@ export const ProjectPreview = ({
         <CardTitle className="flex justify-between items-center">
           <div>{header}</div>
           <div className=" text-purple-200 transition hover:opacity-75 duration-100 flex">
-            <Badge variant="outline" className="flex gap-2">
-              {icon}
-              <AnimatedText>react</AnimatedText>
-            </Badge>
+            {tags &&
+              tags.map((tag, index) => (
+                <Badge key={`tag-${index}`} type={tag}></Badge>
+              ))}
           </div>
         </CardTitle>
         <CardDescription>{description}</CardDescription>

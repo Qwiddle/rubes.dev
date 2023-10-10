@@ -18,6 +18,7 @@ export const ProjectList = () => {
       icon={project.icon}
       link={project.link}
       content={project.content}
+      tags={project.tags}
     />
   ));
 };

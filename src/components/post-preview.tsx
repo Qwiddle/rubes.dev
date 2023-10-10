@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/components/badge";
 import { AnimatedText } from "./typography/animated-text";
 
 export const PostPreview = ({
@@ -18,7 +18,7 @@ export const PostPreview = ({
   title: string;
   description: string;
   content?: string;
-  tags?: string[];
+  tags?: Badge[];
 }) => {
   return (
     <Card className="transform hover:scale-[1.025] hover:cursor-pointer ease-in duration-100">
@@ -28,14 +28,7 @@ export const PostPreview = ({
           <div className="flex">
             {tags &&
               tags.map((tag, index) => (
-                <Badge
-                  key={`tag-${index}`}
-                  variant="outline"
-                  className="flex gap-2"
-                >
-                  🏆
-                  <AnimatedText>{tag}</AnimatedText>
-                </Badge>
+                <Badge key={`tag-${index}`} type={tag}></Badge>
               ))}
           </div>
         </CardTitle>
