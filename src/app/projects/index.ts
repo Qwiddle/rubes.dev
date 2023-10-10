@@ -1,4 +1,4 @@
-import {Badge} from "@/components/badge";
+import type { Badge } from "@/components/badge";
 
 export const projects: {
   name: string;
