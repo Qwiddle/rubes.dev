@@ -20,7 +20,7 @@ export const projects: {
     name: "Salsa Tools",
     description: "react - defi analytics for the salsaDAO ecosystem",
     icon: "🏆",
-    link: "https://salsatools.xyz",
+    link: "https://github.com/Qwiddle/matterdefirichlist",
     content:
       "https://user-images.githubusercontent.com/24196928/229689409-87805e09-6f60-4b50-8348-77f2364113dd.png",
     tags: ["react", "tezos"],
@@ -30,7 +30,7 @@ export const projects: {
     description:
       "svelte - an opensource library easing connections between svelte and the tezos blockchain.",
     icon: "👨🏻‍💻",
-    link: "https://google.com/",
+    link: "https://github.com/Qwiddle/svelte-tezos",
     content:
       "https://user-images.githubusercontent.com/24196928/250879591-a2654413-acc2-4afc-b28e-3130486f11cd.png",
     tags: ["svelte", "tezos"],
