@@ -12,7 +12,7 @@ export const SiteFooter = () => {
           href="https://twitter.com/TweakerTez"
           target="about:blank"
         >
-          <Twitter className="h-6 w-6 text-muted-foreground" />
+          <Twitter className="h-5 w-5 text-muted-foreground" />
           <p className="text-xs font-medium">@tweakertez</p>
         </a>
         <a
@@ -20,7 +20,7 @@ export const SiteFooter = () => {
           href="https://github.com/Qwiddle"
           target="about:blank"
         >
-          <Github className="h-6 w-6 text-muted-foreground" />
+          <Github className="h-5 w-5 text-muted-foreground" />
           <p className="text-xs font-medium">@qwiddle</p>
         </a>
       </div>

@@ -34,13 +34,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex justify-center pb-4 bg-gray-50 h-screen">
+        <div className="flex justify-center bg-gray-50 h-screen">
           <div className="flex flex-col max-w-[1200px] space-y-4 flex-grow p-4">
             <ProfileHeader />
             <div className="flex-1">{children}</div>
             <Separator />
             <SiteFooter />
-            <div className="pb-1"></div>
           </div>
         </div>
       </body>
