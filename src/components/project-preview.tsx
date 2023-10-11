@@ -35,10 +35,14 @@ export const ProjectPreview = ({
       <CardHeader>
         <CardTitle className="flex justify-between items-center">
           <div>{header}</div>
-          <div className=" text-purple-200 transition hover:opacity-75 duration-100 flex">
+          <div className=" transition duration-100 flex md:flex-col lg:flex-row sm:flex-row">
             {tags &&
               tags.map((tag, index) => (
-                <Badge key={`tag-${index}`} type={tag}></Badge>
+                <Badge
+                  key={`tag-${index}`}
+                  type={tag}
+                  className="hover:opacity-75"
+                ></Badge>
               ))}
           </div>
         </CardTitle>

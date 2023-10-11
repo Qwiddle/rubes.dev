@@ -18,9 +18,15 @@ export const badgeEmojis = new Map([
   ["node.js", "💾"],
 ]);
 
-export const Badge = ({ type }: { type: Badge }) => {
+export const Badge = ({
+  type,
+  className,
+}: {
+  type: Badge;
+  className?: string;
+}) => {
   return (
-    <UIBadge variant="outline" className="flex gap-2">
+    <UIBadge variant="outline" className={`flex gap-2 ${className}`}>
       {badgeEmojis.get(type)}
       <AnimatedText>{type}</AnimatedText>
     </UIBadge>

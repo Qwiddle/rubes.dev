@@ -1,9 +1,9 @@
 import { ProjectList } from "@/components/project-list";
 
-export default function Posts() {
+export default function Projects() {
   return (
     <>
-      <div className="grid grid-cols-3 gap-x-2">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
         <ProjectList />
       </div>
     </>

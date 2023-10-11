@@ -15,7 +15,7 @@ export const ProfileHeader = async () => {
             <AvatarFallback>AR</AvatarFallback>
           </Avatar>
           <div>
-            <h2 className="text-md tracking-tight animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-semibold">
+            <h2 className="text-md tracking-tight hover-text font-semibold">
               Andrew Rubenstein
             </h2>
             <p className="text-sm text-muted-foreground">
