@@ -5,7 +5,7 @@ import { GithubHover } from "./github-hover";
 import SocialHover from "./social-hover";
 import { NavigationLink } from "./nav/nav-link";
 
-export const ProfileHeader = async () => {
+export const ProfileHeader = async (): Promise<React.ReactElement> => {
   return (
     <>
       <div className="flex justify-between space-x-8">
@@ -15,12 +15,8 @@ export const ProfileHeader = async () => {
             <AvatarFallback>AR</AvatarFallback>
           </Avatar>
           <div>
-            <h2 className="text-md tracking-tight hover-text font-semibold">
-              Andrew Rubenstein
-            </h2>
-            <p className="text-sm text-muted-foreground">
-              frontend developer. let&rsquo;s build the future.
-            </p>
+            <h2 className="text-md tracking-tight hover-text font-semibold">Andrew Rubenstein</h2>
+            <p className="text-sm text-muted-foreground">frontend developer. let&rsquo;s build the future.</p>
           </div>
         </div>
         <div className="gap-x-4 self-end md:inline-flex hidden">
