@@ -26,16 +26,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="flex justify-center bg-gray-50 h-screen">
-          <div className="flex flex-col max-w-[1200px] space-y-4 flex-grow p-4">
+      <body className={`${inter.className} bg-gray-50`}>
+        <div className="flex justify-center h-screen">
+          <div className="flex flex-col max-w-[1200px] gap-y-4 flex-grow p-4 last:pb-8">
             <ProfileHeader />
             <div className="flex-1">{children}</div>
             <Separator />
