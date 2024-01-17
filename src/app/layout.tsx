@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { ProfileHeader } from "@/components/profile-header";
 import { SiteFooter } from "@/components/site-footer";
 import { Separator } from "@/components/ui/separator";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,13 +32,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${inter.className} bg-gray-50`}>
         <div className="flex justify-center h-screen">
-          <div className="flex flex-col max-w-[1200px] gap-y-4 flex-grow p-4 last:pb-8">
+          <div className="flex flex-col max-w-[1200px] gap-y-4 flex-grow p-4">
             <ProfileHeader />
             <div className="flex-1">{children}</div>
             <Separator />
             <SiteFooter />
           </div>
         </div>
+        <Analytics />
       </body>
     </html>
   );
